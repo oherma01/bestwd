@@ -1,0 +1,207 @@
+/* Portfolio Filter Stylesheet */
+
+/*****Reset*****/
+
+
+/*****Basic Definitions*****/
+
+
+a { color: #333; }
+a:visited { }
+a:hover { text-decoration: none; }
+p, ul, ol, dl, table { margin-bottom: 18px; }
+ul, ol, dd { margin-left: 36px; }
+
+/*****Custom Classes*****/
+.clearing { clear: both; }
+.last { margin-bottom: 0; }
+.screenReader { left: -9999px; position: absolute; top: -9999px; }
+
+/*****Basic Layout*****/
+
+ul#filter { 
+            float: left; font-size: 12px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 700px; 
+        }
+        ul#portfolio li{ 
+            border: 1px solid #dedede; 
+            float: left; 
+            margin: 0 14px 7px 0; 
+            padding: 7px;
+            width: 210px;
+            height: 140px;
+        }
+
+ul#filter li:last-child { border-right: none; margin-right: 0; padding-right: 0; }
+ul#filter a { color: #999; text-decoration: none; }
+ul#filter li.current a{ text-decoration: none; }
+ul#filter a:hover{ color: #53b2d5;}
+ul#filter li.current a { color: #333; font-weight: bold; }
+
+ul#portfolio a { display: block; width: 100%; text-decoration: none; }
+ul#portfolio a:hover { color: #53b2d5; }
+
+ul#portfolio img {
+border: 1px solid #dedede; display: block; padding-bottom: 7px; 
+}
+/* #Media Queries
+================================================== */
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+        
+        ul#filter { 
+            float: left; font-size: 12px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 700px; 
+        }
+        ul#portfolio li{ 
+            border: 1px solid #dedede; 
+            float: left; 
+            margin: 0 14px 7px 0; 
+            padding: 7px;
+            width: 210px;
+            height: 140px;
+            font: 8px;
+        }
+    }
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+    
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+        
+        ul#filter { 
+            float: left; font-size: 12px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 700px; 
+        }
+        ul#portfolio li{ 
+            border: 1px solid #dedede; 
+            float: left; 
+            margin: 0 14px 7px 0; 
+            padding: 7px;
+            width: 210px;
+            height: 140px;
+            font: 8px;
+        }
+    }
+	/* All Mobile Sizes (devices and browser) */
+    
+	@media only screen and (max-width: 767px) {
+        div#portfoliocontainer { 
+            margin: 20px auto 0; overflow: hidden; width: 420px;
+        }
+    
+        ul#filter { 
+            float: left; font-size: 8px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 350px; 
+        }
+        ul#portfolio li{ 
+        border: 1px solid #dedede; 
+        float: left; 
+        margin: 0 14px 7px 0; 
+        padding: 7px;
+        width: 210px;
+        height: 140px;
+        font: 8px;
+        }
+    }
+	
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+        div#portfoliocontainer { 
+            margin: 20px auto 0; overflow: hidden; width: 460px;
+        }
+    
+        ul#filter { 
+            float: left; font-size: 8px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 350px; 
+        }
+        ul#portfolio li{ 
+        border: 1px solid #dedede; 
+        float: left; 
+        margin: 0 14px 7px 0; 
+        padding: 7px;
+        width: 70px;
+        height: 70px;
+        font: 8px;
+        }
+    }
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+        div#portfoliocontainer { 
+            margin: 20px auto 0; overflow: hidden; width: 420px; margin-right:120px;
+        }
+    
+        ul#filter { 
+            float: left; font-size: 8px; list-style: none; margin-left: 0; width: 100%; 
+        }
+        ul#filter li { 
+            border-right: 1px solid #dedede;
+            float: left;
+            line-height: 14px;
+            margin-right: 7px;
+            padding-right: 14px;
+            font-family: arial, sans-serif;
+        }
+        ul#portfolio {
+            float: left; list-style: none; margin-left: 0; width: 350px; 
+        }
+        ul#portfolio li{ 
+        border: 1px solid #dedede; 
+        float: left; 
+        margin: 0 14px 7px 0; 
+        padding: 7px;
+        width: 70px;
+        height: 70px;
+        }
+		
+	}
